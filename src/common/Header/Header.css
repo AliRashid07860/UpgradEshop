@@ -1,0 +1,47 @@
+/* src/components/common/Header/Header.css */
+.header-appbar {
+  background-color: #3f51b5 !important; /* Material-UI primary color or your choice */
+}
+
+.header-logo-icon {
+  margin-right: 8px;
+  color: white;
+}
+
+.header-title {
+  color: white;
+  font-weight: bold;
+}
+
+.header-search-field {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 300px; /* Adjust as needed */
+}
+
+.header-search-input .MuiOutlinedInput-input {
+  color: white;
+  padding: 8px 12px; /* Adjust padding */
+}
+
+.header-search-input .MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important; /* Hide default border */
+}
+
+.header-search-input
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.header-search-icon {
+  color: white;
+}
+
+.header-links .MuiButton-root {
+  color: white;
+  margin-left: 10px;
+  text-transform: capitalize; /* Make button text natural */
+}

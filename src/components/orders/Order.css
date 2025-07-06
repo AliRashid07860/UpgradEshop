@@ -1,0 +1,56 @@
+/* src/components/orders/Order/Order.css */
+.order-page-container {
+  padding: 30px;
+  background-color: #f0f2f5;
+  min-height: calc(100vh - 64px); /* Adjust based on header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-title {
+  color: #3f51b5;
+  font-weight: 600 !important;
+  margin-bottom: 25px !important;
+}
+
+.order-stepper .MuiStepLabel-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.order-product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Common styling for info boxes */
+.MuiPaper-root.MuiPaper-elevation1 {
+  border: 1px solid #e0e0e0;
+  box-shadow: none !important;
+}
+
+/* Stepper navigation buttons */
+.MuiBox-root > .MuiButton-root {
+  min-width: 100px;
+}
+
+/* Error container for initial missing data */
+.order-error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  text-align: center;
+  padding: 20px;
+}
+
+.order-error-container .MuiAlert-root {
+  margin-bottom: 20px;
+  width: fit-content;
+}

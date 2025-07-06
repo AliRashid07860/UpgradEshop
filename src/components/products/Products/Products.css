@@ -1,0 +1,94 @@
+/* src/components/products/Products/Products.css */
+.products-page-container {
+  padding: 20px;
+}
+
+.products-loading-container,
+.products-error-container,
+.products-no-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Adjust as needed */
+  text-align: center;
+}
+
+.products-error-container .MuiAlert-root {
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.products-no-results {
+  color: #555;
+}
+
+.products-grid-container {
+  margin-top: 20px;
+  justify-content: center; /* Center cards if not full width */
+}
+
+.product-card {
+  height: 100%; /* Make cards same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 8px;
+  overflow: hidden; /* Ensure media doesn't overflow rounded corners */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card-media {
+  object-fit: cover; /* Ensure image covers the area */
+  border-bottom: 1px solid #eee;
+}
+
+.product-card-title {
+  font-weight: 600 !important;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+  margin-bottom: 5px !important;
+}
+
+.product-card-category {
+  font-size: 0.85rem !important;
+  color: #777 !important;
+  margin-bottom: 5px !important;
+}
+
+.product-card-price {
+  font-weight: 700 !important;
+  color: #3f51b5 !important; /* Primary color for price */
+  margin-bottom: 10px !important;
+}
+
+.product-card-description {
+  font-size: 0.9rem !important;
+  line-height: 1.5;
+  min-height: 40px; /* Ensure consistent height for description */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+}
+
+.product-card-actions {
+  padding: 16px !important;
+  justify-content: center;
+}
+
+.product-card-button {
+  width: 80% !important; /* Make button wider */
+  background-color: #4caf50 !important; /* Green color for Buy button */
+}
+
+.product-card-button:hover {
+  background-color: #43a047 !important;
+}
